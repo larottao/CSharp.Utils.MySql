@@ -75,3 +75,7 @@ C:\Repositorios\LaRottaO.CSharp.Utils.MySql\LaRottaO.CSharp.MySqlUtilities\obj\D
 C:\Repositorios\LaRottaO.CSharp.Utils.MySql\LaRottaO.CSharp.MySqlUtilities\obj\Debug\LaRottaO.CSharp.MySqlUtilities.pdb
 C:\Repositorios\LaRottaO.CSharp.Utils.MySql\LaRottaO.CSharp.MySqlUtilities\bin\Debug\System.Numerics.Vectors.dll
 C:\Repositorios\LaRottaO.CSharp.Utils.MySql\LaRottaO.CSharp.MySqlUtilities\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Repositorios\CSharp.Utils.MySql\LaRottaO.CSharp.MySqlUtilities\obj\Debug\LaRottaO.CSharp.MySqlUtilities.csproj.AssemblyReference.cache
+C:\Repositorios\CSharp.Utils.MySql\LaRottaO.CSharp.MySqlUtilities\obj\Debug\LaRottaO.CSharp.MySqlUtilities.csproj.CoreCompileInputs.cache
+C:\Repositorios\CSharp.Utils.MySql\LaRottaO.CSharp.MySqlUtilities\obj\Debug\LaRottaO.CSharp.MySqlUtilities.dll
+C:\Repositorios\CSharp.Utils.MySql\LaRottaO.CSharp.MySqlUtilities\obj\Debug\LaRottaO.CSharp.MySqlUtilities.pdb

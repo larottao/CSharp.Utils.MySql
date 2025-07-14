@@ -1,133 +1,130 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.Data.Common;
 using System.Diagnostics;
 using System.Reflection;
+using System.Threading;
 using System.Threading.Tasks;
 
-namespace LaRottaO.CSharp.MySqlUtilities
+public static class MySqlUtilities
 {
-    public class Select
+    ///
+    /// Executes a SELECT query asynchronously, maps the results to a list of objects, and supports cancellation.
+    ///
+    /// Eexample
+    ///
+    /// // 1. Define your data model
+    /// public class Product
+    /// {
+    ///     public int ProductId { get; set; }
+    ///     public string ProductName { get; set; }
+    /// }
+    ///
+    /// // 2. Call the method
+    /// public async Task GetProducts()
+    /// {
+    ///     var cts = new CancellationTokenSource(TimeSpan.FromSeconds(10)); // Cancel after 10s
+    ///
+    ///     var (success, error, products) = await MySqlUtilities.SelectAsync(
+    ///         connectionString: "server=your_server;database=your_db;user=your_user;password=your_pass;",
+    ///         query: "SELECT ProductId, ProductName FROM Products WHERE CategoryId = @Id;",
+    ///         parameters: new Dictionary&lt;string, object&gt; { { "@Id", 5 } },
+    ///         cancellationToken: cts.Token
+    ///     );
+    ///
+    ///     if (success)
+    ///     {
+    ///         Console.WriteLine($"Found {products.Count} products.");
+    ///     }
+    ///     else
+    ///     {
+    ///         Console.WriteLine($"Error: {error}");
+    ///     }
+    /// }
+    ///
+    ///
+    ///
+
+    public static async Task<(bool success, string errorMessage, List<T> data)> SelectAsync<T>(
+        string connectionString,
+        string query,
+        Dictionary<string, object> parameters = null,
+        int commandTimeoutSeconds = 30,
+        CancellationToken cancellationToken = default) where T : new()
     {
-        public async Task<(Boolean success, String errorReason, List<T> data)> select<T>(string argConnString, String argQuery, int argTimeoutMs, Boolean showDebug = false) where T : new()
+        var outputList = new List<T>();
+
+        try
         {
-            if (showDebug)
+            using (var connection = new MySqlConnection(connectionString))
             {
-                Console.WriteLine("Connection String is: " + argConnString);
-                Console.WriteLine("Query is: " + argQuery);
-            }
+                await connection.OpenAsync(cancellationToken);
 
-            MySqlConnection conn = new MySqlConnection(argConnString);
-
-            DbDataReader rdr = null;
-
-            try
-            {
-                conn.Open();
-
-                MySqlCommand cmd = new MySqlCommand(argQuery, conn);
-
-                if (argTimeoutMs != -1)
+                using (var cmd = new MySqlCommand(query, connection))
                 {
-                    cmd.CommandTimeout = argTimeoutMs;
-                }
+                    cmd.CommandTimeout = commandTimeoutSeconds;
 
-                rdr = await cmd.ExecuteReaderAsync();
-
-                //  Create a dictionary that contains each column name and a consecutive number.
-                //  That number will be later  used to locate the column by its name.
-
-                Dictionary<String, int> dictionaryColumnNameVsIndex = new Dictionary<String, int>();
-
-                for (int i = 0; i < rdr.FieldCount; i++)
-                {
-                    String columnName = rdr.GetName(i);
-                    dictionaryColumnNameVsIndex.Add(columnName, i);
-                }
-
-                PropertyInfo[] properties = typeof(T).GetProperties();
-
-                T destinationObject;
-
-                List<T> outputList = new List<T>();
-
-                while (rdr.Read())
-                {
-                    //  For each row obtained from the query execution, create a new instance of the Object
-
-                    destinationObject = new T();
-
-                    for (int i = 0; i < rdr.FieldCount; i++)
+                    if (parameters != null)
                     {
-                        foreach (PropertyInfo property in properties)
+                        foreach (var param in parameters)
                         {
-                            //  Check if the destination object contains a property with the same name.
-
-                            if (dictionaryColumnNameVsIndex.ContainsKey(property.Name))
-                            {
-                                //  If it does, assign the value to said property.
-
-                                PropertyInfo propertyToBeChanged = destinationObject.GetType().GetProperty(property.Name);
-
-                                Object newValue = null;
-
-                                try
-                                {
-                                    newValue = rdr[dictionaryColumnNameVsIndex[property.Name]];
-
-                                    if (newValue == null || newValue.GetType().ToString() == "System.DBNull")
-                                    {
-                                        propertyToBeChanged.SetValue(destinationObject, null);
-                                    }
-                                    else
-                                    {
-                                        propertyToBeChanged.SetValue(destinationObject, newValue);
-                                    }
-                                }
-                                catch (Exception ex)
-                                {
-                                    propertyToBeChanged.SetValue(destinationObject, null);
-
-                                    String errorMessageForConsole = "ERROR: Parsing the property: " + property.Name + " failed. " + ex.Message;
-
-                                    Console.WriteLine(errorMessageForConsole);
-                                    Debug.WriteLine(errorMessageForConsole);
-
-                                    return (false, Constants.MYSQL_ERROR + errorMessageForConsole, new List<T>());
-                                }
-                            }
+                            cmd.Parameters.AddWithValue(param.Key, param.Value ?? DBNull.Value);
                         }
                     }
 
-                    outputList.Add(destinationObject);
-                }
+                    using (var reader = await cmd.ExecuteReaderAsync(cancellationToken))
+                    {
+                        var columnMap = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+                        for (int i = 0; i < reader.FieldCount; i++)
+                        {
+                            columnMap.Add(reader.GetName(i), i);
+                        }
 
-                if (outputList.Count == 0)
-                {
-                    return (false, Constants.MYSQL_NO_RESULTS, outputList);
-                }
+                        var properties = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
 
-                return (true, Constants.MYSQL_SUCCESS, outputList);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message + " " + ex.StackTrace);
-                Debug.WriteLine(ex.Message + " " + ex.StackTrace);
+                        while (await reader.ReadAsync(cancellationToken))
+                        {
+                            T destinationObject = new T();
 
-                return (false, Constants.MYSQL_ERROR + " " + ex, new List<T>());
-            }
-            finally
-            {
-                if (rdr != null)
-                {
-                    rdr.Close();
+                            foreach (var property in properties)
+                            {
+                                if (columnMap.TryGetValue(property.Name, out int columnIndex))
+                                {
+                                    var dbValue = reader.GetValue(columnIndex);
+
+                                    if (dbValue != DBNull.Value)
+                                    {
+                                        try
+                                        {
+                                            var propType = Nullable.GetUnderlyingType(property.PropertyType) ?? property.PropertyType;
+                                            var safeValue = Convert.ChangeType(dbValue, propType);
+                                            property.SetValue(destinationObject, safeValue);
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            Debug.WriteLine($"Could not convert property '{property.Name}'. Error: {ex.Message}");
+                                        }
+                                    }
+                                }
+                            }
+                            outputList.Add(destinationObject);
+                        }
+                    }
                 }
-                if (conn != null)
-                {
-                    conn.Close();
-                }
             }
+            return (true, null, outputList);
+        }
+        catch (OperationCanceledException)
+        {
+            return (false, "Query was canceled.", new List<T>());
+        }
+        catch (MySqlException sqlEx)
+        {
+            return (false, $"MySQL Error {sqlEx.Number}: {sqlEx.Message}", new List<T>());
+        }
+        catch (Exception ex)
+        {
+            return (false, $"An unexpected error occurred: {ex.Message}", new List<T>());
         }
     }
 }

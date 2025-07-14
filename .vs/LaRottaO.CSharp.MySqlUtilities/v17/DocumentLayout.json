@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Repositorios\\CSharp.Utils.MySql\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|c:\\repositorios\\csharp.utils.mysql\\larottao.csharp.mysqlutilities\\select.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|solutionrelative:larottao.csharp.mysqlutilities\\select.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|LaRottaO.CSharp.MySqlUtilities||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|C:\\Repositorios\\CSharp.Utils.MySql\\larottao.csharp.mysqlutilities\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|solutionrelative:larottao.csharp.mysqlutilities\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|C:\\Repositorios\\CSharp.Utils.MySql\\larottao.csharp.mysqlutilities\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|solutionrelative:larottao.csharp.mysqlutilities\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|C:\\Repositorios\\CSharp.Utils.MySql\\larottao.csharp.mysqlutilities\\loaddatainfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|solutionrelative:larottao.csharp.mysqlutilities\\loaddatainfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|C:\\Repositorios\\CSharp.Utils.MySql\\larottao.csharp.mysqlutilities\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|solutionrelative:larottao.csharp.mysqlutilities\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|C:\\Repositorios\\CSharp.Utils.MySql\\larottao.csharp.mysqlutilities\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|solutionrelative:larottao.csharp.mysqlutilities\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|C:\\Repositorios\\CSharp.Utils.MySql\\larottao.csharp.mysqlutilities\\executestoredprocedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|solutionrelative:larottao.csharp.mysqlutilities\\executestoredprocedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|C:\\Repositorios\\CSharp.Utils.MySql\\larottao.csharp.mysqlutilities\\truncate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|solutionrelative:larottao.csharp.mysqlutilities\\truncate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|C:\\Repositorios\\CSharp.Utils.MySql\\larottao.csharp.mysqlutilities\\insert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|solutionrelative:larottao.csharp.mysqlutilities\\insert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|C:\\Repositorios\\CSharp.Utils.MySql\\larottao.csharp.mysqlutilities\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|solutionrelative:larottao.csharp.mysqlutilities\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE88E252-EDF6-4AAE-9D54-0B48F3C6BC11}|LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj|c:\\repositorios\\csharp.utils.mysql\\larottao.csharp.mysqlutilities\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Select.cs",
+              "DocumentMoniker": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Select.cs",
+              "RelativeDocumentMoniker": "LaRottaO.CSharp.MySqlUtilities\\Select.cs",
+              "ToolTip": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Select.cs",
+              "RelativeToolTip": "LaRottaO.CSharp.MySqlUtilities\\Select.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T02:56:49.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\app.config",
+              "RelativeDocumentMoniker": "LaRottaO.CSharp.MySqlUtilities\\app.config",
+              "ToolTip": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\app.config",
+              "RelativeToolTip": "LaRottaO.CSharp.MySqlUtilities\\app.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-14T03:32:59.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\packages.config",
+              "RelativeDocumentMoniker": "LaRottaO.CSharp.MySqlUtilities\\packages.config",
+              "ToolTip": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\packages.config",
+              "RelativeToolTip": "LaRottaO.CSharp.MySqlUtilities\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-14T03:32:00.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoadDataInFile.cs",
+              "DocumentMoniker": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\LoadDataInFile.cs",
+              "RelativeDocumentMoniker": "LaRottaO.CSharp.MySqlUtilities\\LoadDataInFile.cs",
+              "ToolTip": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\LoadDataInFile.cs",
+              "RelativeToolTip": "LaRottaO.CSharp.MySqlUtilities\\LoadDataInFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T02:56:49.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cs",
+              "DocumentMoniker": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Delete.cs",
+              "RelativeDocumentMoniker": "LaRottaO.CSharp.MySqlUtilities\\Delete.cs",
+              "ToolTip": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Delete.cs",
+              "RelativeToolTip": "LaRottaO.CSharp.MySqlUtilities\\Delete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T02:56:49.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Truncate.cs",
+              "DocumentMoniker": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Truncate.cs",
+              "RelativeDocumentMoniker": "LaRottaO.CSharp.MySqlUtilities\\Truncate.cs",
+              "ToolTip": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Truncate.cs",
+              "RelativeToolTip": "LaRottaO.CSharp.MySqlUtilities\\Truncate.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABAAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T02:56:49.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExecuteStoredProcedure.cs",
+              "DocumentMoniker": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\ExecuteStoredProcedure.cs",
+              "RelativeDocumentMoniker": "LaRottaO.CSharp.MySqlUtilities\\ExecuteStoredProcedure.cs",
+              "ToolTip": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\ExecuteStoredProcedure.cs",
+              "RelativeToolTip": "LaRottaO.CSharp.MySqlUtilities\\ExecuteStoredProcedure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T02:56:49.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LaRottaO.CSharp.MySqlUtilities",
+              "DocumentMoniker": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj",
+              "RelativeDocumentMoniker": "LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj",
+              "ToolTip": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj",
+              "RelativeToolTip": "LaRottaO.CSharp.MySqlUtilities\\LaRottaO.CSharp.MySqlUtilities.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-14T03:23:40.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Constants.cs",
+              "RelativeDocumentMoniker": "LaRottaO.CSharp.MySqlUtilities\\Constants.cs",
+              "ToolTip": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Constants.cs",
+              "RelativeToolTip": "LaRottaO.CSharp.MySqlUtilities\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T03:33:14.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Insert.cs",
+              "DocumentMoniker": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Insert.cs",
+              "RelativeDocumentMoniker": "LaRottaO.CSharp.MySqlUtilities\\Insert.cs",
+              "ToolTip": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Insert.cs",
+              "RelativeToolTip": "LaRottaO.CSharp.MySqlUtilities\\Insert.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T02:56:49.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Update.cs",
+              "DocumentMoniker": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Update.cs",
+              "RelativeDocumentMoniker": "LaRottaO.CSharp.MySqlUtilities\\Update.cs",
+              "ToolTip": "C:\\Repositorios\\CSharp.Utils.MySql\\LaRottaO.CSharp.MySqlUtilities\\Update.cs",
+              "RelativeToolTip": "LaRottaO.CSharp.MySqlUtilities\\Update.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwCEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T02:56:49.804Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
